@@ -1,0 +1,835 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    height: 100%;
+    background: cadetblue;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 82px;
+    margin: auto;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 15px 0;
+    background: #34495e;
+    font-family: 'Ubuntu', sans-serif;
+    z-index: 1;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    color: white;
+    font-size: 30px;
+    font-weight: 580;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 30px;
+}
+
+.navbar .menu li a:hover {
+    color: orangered;
+}
+
+
+#home {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    background: url(image/kp2.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    top: 50%;
+    left: 7%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    text-align: left;
+    color: black;
+}
+
+.t2 {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: crimson;
+    border: 1px solid crimson;
+    color: white;
+    outline: none;
+    transition: .6s ease;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    font-weight: bold;
+}
+
+.social-menu ul {
+    position: absolute;
+    top: 43%;
+    right: 63%;
+    padding: 0;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.social-menu ul li {
+    list-style: none;
+    margin: 0px 11px;
+}
+
+.social-menu ul li .fa {
+    font-size: 25px;
+    line-height: 47px;
+    transform: .6s;
+    color: #000;
+}
+.social-menu ul li .fa:hover {
+    color: #fff;
+}
+
+.social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transform: .6s;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+}
+
+.social-menu ul li a:hover {
+    transform: translate(0, -10px);
+}
+
+.social-menu ul li:nth-child(1) a:hover {
+    background-color: #3b5999;
+}
+
+.social-menu ul li:nth-child(2) a:hover {
+    background-color: #55acee;
+}
+
+.social-menu ul li:nth-child(3) a:hover {
+    background-color: #e44057;
+}
+
+.social-menu ul li:nth-child(4) a:hover {
+    background-color: #007785;
+}
+
+
+
+#about {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 30px;
+    margin-bottom: 50px;
+    font-family: sans-serif;
+    background: black;
+    color: #fff;
+}
+
+#abouth {
+    color: antiquewhite;
+    text-decoration: underline;
+    padding: 10px;
+}
+
+#pic {
+    display: flex;
+}
+
+#pic img {
+    padding: 50px;
+    width: 580px;
+    height: 560px;
+    border-radius: 50%;
+}
+
+
+#intro {
+    width: 1100px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 50px;
+    font-size: 25px;
+}
+
+#intro h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.uits {
+    color: mediumvioletred;
+}
+
+.ccbox {
+    margin: 5px;
+    padding: 15px;
+    height: auto;
+    display: block;
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+}
+.ccb1 {
+    width: 300px;
+}
+
+.ccb2 {
+    width: 300px;
+}
+
+.hh {
+    height: 40px;
+    width: 40px;
+    color: orangered;
+}
+.nnn {
+    color: white;
+    font-size: 20px;
+}
+
+.ccc {
+    display: inline;
+    margin: 5px;
+    padding: 15px;
+}
+
+.headings {
+    font-family: 'Ubuntu', sans-serif;
+    font-size:35px;
+    text-align: center;
+    margin: 50px 0px;
+    color: black;
+}
+
+.btnnn {
+    padding: 15px 10px;
+    background-color: orangered;
+    border: 1px solid orangered;
+    color: white;
+    transition: .6s ease;
+    width: 17%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-indent: bold;
+    border-radius: 5px;
+}
+
+.cv {
+    padding: 14px 5px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    transition: .6s ease;
+    width: 18%;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+#services {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: cadetblue;
+}
+
+.serpic {
+    position: center;
+    height: 250px;
+    width: 300px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+}
+
+.row {
+    display: flex;
+    margin: auto;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    height: 300px;
+    border: 1px solid oldlace;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 15px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 50px;
+    background: linear-gradient(to top, orangered 50%, oldlace 50%);
+    background-size: 100% 200%;
+    color: black;
+    transition: all.8s;
+}
+
+#sboxh{
+    font-size:30px;
+    color: darkblue;
+}
+#sboxh:hover{
+    color: black;
+}
+#sboxh .p{
+    font-family: cursive;
+}
+
+.box:hover {
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px orangered;
+    cursor: pointer;
+}
+
+.box img {
+    width: 70px;
+    height: 70px;
+}
+
+.p {
+    text-indent: bold;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    color: orangered;
+}
+
+.details {
+    display: flex;
+    width: 1280px;
+    height: 450px;
+    padding: 20px;
+    margin: 20px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+    background-size: 100% 200%;
+    color: black;
+    font-size: 25px;
+    transition: all.8s;
+}
+
+::selection {
+    color: black;
+}
+
+.skill-bars {
+    width: 600px;
+    padding: 40px 40px;
+    margin-left: 20px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-family:sans-serif;
+}
+
+.skill-bars .bar {
+    margin: 5px 0;
+}
+
+.skill-bars .bar:first-child {
+    margin-top: 5px;
+}
+
+.skill-bars .bar .info {
+    margin-bottom: 5px;
+}
+
+.skill-bars .bar .info span {
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+}
+
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+.skill-bars .bar .progress-line {
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05),
+        0 1px rgba(255, 255, 255, 0.8);
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.bar .progress-line span {
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: crimson;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line.html span {
+    width: 90%;
+}
+
+.bar .progress-line.css span {
+    width: 80%;
+}
+
+.bar .progress-line.javascript span {
+    width: 60%;
+}
+
+.bar .progress-line.php span {
+    width: 70%;
+}
+
+.bar .progress-line.mysql span {
+    width: 50%;
+}
+
+.progress-line span::before {
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+.progress-line span::after {
+    position: absolute;
+    top: -28px;
+    right: 0;
+    font-weight: 500;
+    background: #000;
+    color: white;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText2 {
+    100% {
+        opacity: 1;
+    }
+}
+
+.progress-line.html span::after {
+    content: "90%";
+}
+
+.progress-line.css span::after {
+    content: "80%";
+}
+
+.progress-line.javascript span::after {
+    content: "60%";
+}
+
+.progress-line.php span::after {
+    content: "70%";
+}
+
+.progress-line.mysql span::after {
+    content: "50%";
+}
+
+
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    color: white;
+    padding: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+    color: orangered;
+    font-family: 'Ubuntu', sans-serif;
+    display: inline;
+    margin-left: 30px;
+}
+
+.cbox {
+    width: 1000px;
+    margin: 50px;
+    padding: 40px;
+    height: auto;
+    display: block;
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.cb1 {
+    width: 800px;
+}
+
+.cb2 {
+    width: 200px;
+}
+
+.n {
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+}
+
+.nn {
+    color: black;
+    font-size: 25px;
+}
+
+.letswork {
+    position: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin: 50px 0px;
+    color: black;
+    text-indent: bold;
+}
+
+.rp {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+
+.lw {
+    position: center;
+    height: 240px;
+    width: 270px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+}
+
+.cnct {
+    color: black;
+    height: auto;
+    display: block;
+    display: flex;
+    text-indent: bold;
+}
+
+.cnct1 {
+    width: 1000px;
+    font-size: 20px;
+}
+
+.cnct2 {
+    width: 1000px;
+    font-size: 20px;
+}
+
+.cnct3 {
+    color: black;
+    text-indent: bold;
+    font-size: 20px;
+}
+
+.input {
+    height: 50px;
+    padding: 12px;
+    margin: 15px;
+    width: 80%;
+    border: none;
+    outline: none;
+    background: antiquewhite;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#msg {
+    width: 90%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+    background: antiquewhite;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.sendbtn {
+    display: block;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.btnn {
+    font-size: 15px;
+    height: 40px;
+    width: 120px;
+    cursor: pointer;
+    border: 2px solid crimson;
+    background-color: crimson;
+    color: white;
+    text-indent: bold;
+    border-radius: 5px;
+}
+
+.connect {
+    width: 150px;
+    height: 70px;
+}
+
+.social ul {
+    position: absolute;
+    left: 50%;
+    padding: 0;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.social ul li {
+    list-style: none;
+    margin: 0px 60px;
+}
+
+.social ul li .fa {
+    font-size: 30px;
+    line-height: 50px;
+    transform: .6s;
+    color: #000;
+}
+
+.social ul li .fa:hover {
+    color: #fff;
+}
+
+.social ul li a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 60%;
+    background-color: #fff;
+    text-align: center;
+    transform: .6s;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+}
+
+.social ul li a:hover {
+    transform: translate(0, -10px);
+}
+
+.social ul li:nth-child(1) a:hover {
+    background-color: #3b5999;
+}
+
+.social ul li:nth-child(2) a:hover {
+    background-color: #55acee;
+}
+
+.social ul li:nth-child(3) a:hover {
+    background-color: #e44057;
+}
+
+.social ul li:nth-child(4) a:hover {
+    background-color: #007785;
+}
+
+.social ul li:nth-child(5) a:hover {
+    background-color: #128C7E;
+}
+
+
+
+.headings2 {
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin: 50px 0px;
+    color:black;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.log {
+    display: block;
+    position: relative;
+    text-align: center;
+    margin: 20px 0px;
+}
+.logbox {
+    width: 500px;
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid antiquewhite;
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
+
+.logbtn {
+    font-size: 20px;
+    height: 40px;
+    width: 140px;
+    cursor: pointer;
+    border: 2px solid crimson;
+    background-color: crimson;
+    color: white;
+    text-indent: bold;
+    border-radius: 40px;
+}
+
+.checkbx {
+    font-size: 20px;
+}
+
+.logpic {
+    position: center;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: center;
+    background-color:lightgreen;
+}
+
+#galleryh {
+    background-image: url(services/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: yellow;
+    font-size: 50px;
+}
+.gheading{
+    font-size: 30px;
+    color:aliceblue;
+}
+
+.gabox{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 350px;
+    margin: 35px;
+    align-items: center;
+    text-align: justify;
+    padding: 2px;
+}
+
+.gabox img{
+    width: 400px;
+    height: 380px;
+    
+}
+
+#clr{
+    font-size:20px;
+}
+
+#ending{
+    font-size: 50px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

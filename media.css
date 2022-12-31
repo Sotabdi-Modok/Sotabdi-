@@ -1,0 +1,41 @@
+
+@media only screen and (max-width: 800px) {
+    #pic {
+        flex-direction: column;
+    }
+
+    #pic img {
+        width: 100%;
+    }
+    #intro {
+        width: 100%
+    }
+    .ccbox {
+        display: grid !important;
+    }
+
+    .details {
+        flex-wrap: wrap;
+    }
+    .cbox {
+        display: grid;
+    }
+    .logbox {
+        width: 80%
+    }
+
+    .social-menu ul {
+        margin: 20%;
+    }
+
+    .main {
+        top: 60%;
+    }
+
+}
+
+@media only screen and (max-width: 530px) {
+    section {
+        padding-top: 4em !important;
+    }
+}
